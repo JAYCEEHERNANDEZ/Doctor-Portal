@@ -6,7 +6,6 @@ const authMiddleware = async (
     res,
     next
 ) => {
-
     try {
 
         console.log("MIDDLEWARE HIT");
@@ -28,12 +27,8 @@ const authMiddleware = async (
         const token =
             authHeader.split(" ")[1];
 
-        console.log("TOKEN:", token);
-
         const user =
             await verifyToken(token);
-
-        console.log("USER:", user);
 
         req.user = user.user;
 
