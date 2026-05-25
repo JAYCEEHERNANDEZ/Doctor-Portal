@@ -2,7 +2,6 @@ import {
   createLabRequest,
   getLabResults
 } from "../services/labService.js";
-
 // Create laboratory request
 export const createLab =
 async (req, res) => {
@@ -26,7 +25,6 @@ async (req, res) => {
     }
 
 };
-
 // Fetch laboratory results
 export const fetchLabResults =
 async (req, res) => {
