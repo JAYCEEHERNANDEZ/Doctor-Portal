@@ -88,9 +88,10 @@ Create a `.env` file in the root directory.
 ```env
 PORT=5000
 
-ADAPTER_LAYER_URL=http://localhost:5000
-AUTH_SYSTEM_URL=http://localhost:3000
-NOTIFICATION_SYSTEM=http://localhost:6000
+ADAPTER_LAYER_URL=https://has-adapter-layer.onrender.com/api/adapter
+AUTH_SYSTEM_URL=[http://localhost:3000](https://has-auth.onrender.com/api)
+LABORATORY_SYSTEM=http://localhost:5000/api/lab
+NOTIFICATION_SYSTEM=https://notification-lrqp.onrender.com
 ```
 
 ---
@@ -233,6 +234,7 @@ AUTH_SYSTEM_URL/me
 | ------------------- | -------------------------------------------------------- |
 | ADAPTER_LAYER_URL   | Main adapter layer for appointments, labs, consultations |
 | AUTH_SYSTEM_URL     | User authentication and token verification               |
+| LABORATORY_SYSTEM   | Laboratory uses                                          |
 | NOTIFICATION_SYSTEM | Sending notifications                                    |
 
 ---
