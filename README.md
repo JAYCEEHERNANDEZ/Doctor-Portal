@@ -86,9 +86,8 @@ npm install
 Create a `.env` file in the root directory.
 
 ```env
-PORT=5001
+PORT=5000
 
-LEGACY_SYSTEM=http://localhost:4000
 ADAPTER_LAYER_URL=http://localhost:5000
 AUTH_SYSTEM_URL=http://localhost:3000
 NOTIFICATION_SYSTEM=http://localhost:6000
@@ -232,7 +231,6 @@ AUTH_SYSTEM_URL/me
 
 | Service             | Purpose                                                  |
 | ------------------- | -------------------------------------------------------- |
-| LEGACY_SYSTEM       | Legacy appointment retrieval                             |
 | ADAPTER_LAYER_URL   | Main adapter layer for appointments, labs, consultations |
 | AUTH_SYSTEM_URL     | User authentication and token verification               |
 | NOTIFICATION_SYSTEM | Sending notifications                                    |
@@ -260,7 +258,7 @@ Example error response:
 # Example Server Startup
 
 ```bash
-Doctor Portal running on port 5001
+Doctor Portal running on port 5000
 ```
 
 ---
